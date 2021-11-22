@@ -7,6 +7,48 @@
         <version>1</version>
     </service>
     <service>
+        <publisher>Upnp</publisher>
+        <dcpdir>MediaServer_3</dcpdir>
+        <domain>upnp.org</domain>
+        <type>ConnectionManager</type>
+        <version>2</version>
+    </service>
+    <service>
+        <publisher>Upnp</publisher>
+        <dcpdir>MediaServer_3</dcpdir>
+        <domain>upnp.org</domain>
+        <type>ContentDirectory</type>
+        <version>1</version>
+    </service>
+    <service>
+        <publisher>Upnp</publisher>
+        <dcpdir>MediaServer_3</dcpdir>
+        <domain>upnp.org</domain>
+        <type>ContentDirectory</type>
+        <version>2</version>
+    </service>
+    <service>
+        <publisher>Upnp</publisher>
+        <dcpdir>MediaServer_3</dcpdir>
+        <domain>upnp.org</domain>
+        <type>ContentDirectory</type>
+        <version>3</version>
+    </service>
+    <service>
+        <publisher>Upnp</publisher>
+        <dcpdir>MediaServer_3</dcpdir>
+        <domain>upnp.org</domain>
+        <type>AvTransport</type>
+        <version>1</version>
+    </service>
+    <service>
+        <publisher>Upnp</publisher>
+        <dcpdir>MediaServer_3</dcpdir>
+        <domain>upnp.org</domain>
+        <type>AvTransport</type>
+        <version>2</version>
+    </service>
+    <service>
         <publisher>OpenHome</publisher>
         <dcpdir></dcpdir>
         <domain>av.openhome.org</domain>
@@ -22,9 +64,9 @@
     </service>
     <service>
         <publisher>OpenHome</publisher>
-        <dcpdir>Test</dcpdir>
-        <domain>openhome.org</domain>
-        <type>TestBasic</type>
+        <dcpdir></dcpdir>
+        <domain>av.openhome.org</domain>
+        <type>MediaServer</type>
         <version>1</version>
     </service>
     <service>
@@ -32,6 +74,41 @@
         <dcpdir></dcpdir>
         <domain>openhome.org</domain>
         <type>SubscriptionLongPoll</type>
+        <version>1</version>
+    </service>
+    <service>
+        <publisher>OpenHome</publisher>
+        <dcpdir></dcpdir>
+        <domain>av.openhome.org</domain>
+        <type>Playlist</type>
+        <version>1</version>
+    </service>
+    <service>
+        <publisher>OpenHome</publisher>
+        <dcpdir></dcpdir>
+        <domain>av.openhome.org</domain>
+        <type>PlaylistManager</type>
+        <version>1</version>
+    </service>
+    <service>
+        <publisher>OpenHome</publisher>
+        <dcpdir></dcpdir>
+        <domain>av.openhome.org</domain>
+        <type>Volume</type>
+        <version>1</version>
+    </service>
+    <service>
+        <publisher>OpenHome</publisher>
+        <dcpdir></dcpdir>
+        <domain>av.openhome.org</domain>
+        <type>Time</type>
+        <version>1</version>
+    </service>
+    <service>
+        <publisher>OpenHome</publisher>
+        <dcpdir>Test</dcpdir>
+        <domain>openhome.org</domain>
+        <type>TestBasic</type>
         <version>1</version>
     </service>
 </servicelist>

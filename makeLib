@@ -1,0 +1,30 @@
+mkdir ohNet
+mkdir ohNet/ohNetReleaseLibs
+mkdir ohNet/ohNetDebugLibs
+
+cp -R Build/Include ohNet/
+
+lipo -create Build/Obj/iOS-arm64/Release/libohNetCore.a Build/Obj/iOS-x86/Release/libohNetCore.a Build/Obj/iOS-x64/Release/libohNetCore.a -output ohNet/ohNetReleaseLibs/libohNetCore.a
+
+lipo -create Build/Obj/iOS-arm64/Release/libohNetDevices.a Build/Obj/iOS-x86/Release/libohNetDevices.a Build/Obj/iOS-x64/Release/libohNetDevices.a -output ohNet/ohNetReleaseLibs/libohNetDevices.a
+
+lipo -create Build/Obj/iOS-arm64/Release/libohNetProxies.a Build/Obj/iOS-x86/Release/libohNetProxies.a Build/Obj/iOS-x64/Release/libohNetProxies.a -output ohNet/ohNetReleaseLibs/libohNetProxies.a
+
+lipo -create Build/Obj/iOS-arm64/Debug/libohNetCore.a Build/Obj/iOS-x86/Debug/libohNetCore.a Build/Obj/iOS-x64/Debug/libohNetCore.a -output ohNet/ohNetDebugLibs/libohNetCore.a
+
+lipo -create Build/Obj/iOS-arm64/Debug/libohNetDevices.a Build/Obj/iOS-x86/Debug/libohNetDevices.a Build/Obj/iOS-x64/Debug/libohNetDevices.a -output ohNet/ohNetDebugLibs/libohNetDevices.a
+
+lipo -create Build/Obj/iOS-arm64/Debug/libohNetProxies.a Build/Obj/iOS-x86/Debug/libohNetProxies.a Build/Obj/iOS-x64/Debug/libohNetProxies.a -output ohNet/ohNetDebugLibs/libohNetProxies.a
+
+#lipo -create Build/Obj/iOS-arm64/Release/libohNetCore.a Build/Obj/iOS-x86/Release/libohNetCore.a Build/Obj/Mac-x64/Release/libohNetCore.a Build/Obj/iOS-x64/Release/libohNetCore.a -output ohNet/ohNetReleaseLibs/libohNetCore.a
+
+#lipo -create Build/Obj/iOS-arm64/Release/libohNetDevices.a Build/Obj/iOS-x86/Release/libohNetDevices.a Build/Obj/Mac-x64/Release/libohNetDevices.a Build/Obj/iOS-x64/Release/libohNetDevices.a -output ohNet/ohNetReleaseLibs/libohNetDevices.a
+
+#lipo -create Build/Obj/iOS-arm64/Release/libohNetProxies.a Build/Obj/iOS-x86/Release/libohNetProxies.a Build/Obj/Mac-x64/Release/libohNetProxies.a Build/Obj/iOS-x64/Release/libohNetProxies.a -output ohNet/ohNetReleaseLibs/libohNetProxies.a
+
+#lipo -create Build/Obj/iOS-arm64/Debug/libohNetCore.a Build/Obj/iOS-x86/Debug/libohNetCore.a Build/Obj/Mac-x64/Debug/libohNetCore.a Build/Obj/iOS-x64/Debug/libohNetCore.a -output ohNet/ohNetDebugLibs/libohNetCore.a
+
+#lipo -create Build/Obj/iOS-arm64/Debug/libohNetDevices.a Build/Obj/iOS-x86/Debug/libohNetDevices.a Build/Obj/Mac-x64/Debug/libohNetDevices.a Build/Obj/iOS-x64/Debug/libohNetDevices.a -output ohNet/ohNetDebugLibs/libohNetDevices.a
+
+#lipo -create Build/Obj/iOS-arm64/Debug/libohNetProxies.a Build/Obj/iOS-x86/Debug/libohNetProxies.a Build/Obj/Mac-x64/Debug/libohNetProxies.a Build/Obj/iOS-x64/Debug/libohNetProxies.a -output ohNet/ohNetDebugLibs/libohNetProxies.a
+
